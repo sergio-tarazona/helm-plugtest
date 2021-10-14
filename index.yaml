@@ -3,7 +3,7 @@ entries:
   benu-bng:
   - apiVersion: v2
     appVersion: 9.0.1
-    created: "2021-10-13T12:08:44.830378463-05:00"
+    created: "2021-10-14T14:31:13.388417609-05:00"
     description: Benu BNG chart for Kubernetes
     digest: c13748c553a908c49471caffc658c5a1d92358ef0d9e270d27ade08df1efe3f0
     name: benu-bng
@@ -14,7 +14,7 @@ entries:
   cn-series:
   - apiVersion: v2
     appVersion: 10.0.5
-    created: "2021-10-13T12:08:44.830974606-05:00"
+    created: "2021-10-14T14:31:13.389172615-05:00"
     description: Palo Alto Networks CN-Series firewall Helm chart for Kubernetes
     digest: 5496abd1fc9287278c42fae42280e95f2ee3f8b224730657dee8ba48f997e36f
     icon: https://www.paloaltonetworks.com/content/dam/pan/en_US/images/logos/brand/strata-primary/Strata_Tagline_Logo_RGB.png
@@ -23,4 +23,26 @@ entries:
     urls:
     - cn-series-1.0.7.tgz
     version: 1.0.7
-generated: "2021-10-13T12:08:44.829350826-05:00"
+  mec-platform:
+  - apiVersion: v1
+    appVersion: 1.16.0
+    created: "2021-10-14T14:31:13.389313348-05:00"
+    description: A Helm chart for Kubernetes
+    digest: d7dc514b57722c9c239e621b7d932f21c8d0730204925521e5de20d72dab33bc
+    name: mec-platform
+    type: application
+    urls:
+    - mec-platform-0.1.0.tgz
+    version: 0.1.0
+  unibo-mec-api-tester:
+  - apiVersion: v1
+    appVersion: 1.16.0
+    created: "2021-10-14T14:31:13.389441198-05:00"
+    description: A Helm chart for Kubernetes
+    digest: 9edd93edcee69802eb683c39700aac316b9a26a94b05f1f021deb3de4760a10b
+    name: unibo-mec-api-tester
+    type: application
+    urls:
+    - unibo-mec-api-tester-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-10-14T14:31:13.387457131-05:00"
