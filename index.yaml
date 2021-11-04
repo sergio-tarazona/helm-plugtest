@@ -3,7 +3,7 @@ entries:
   benu-bng:
   - apiVersion: v2
     appVersion: 9.0.1
-    created: "2021-10-22T17:46:56.511966405-05:00"
+    created: "2021-11-04T11:23:01.464797327-05:00"
     description: Benu BNG chart for Kubernetes
     digest: c13748c553a908c49471caffc658c5a1d92358ef0d9e270d27ade08df1efe3f0
     name: benu-bng
@@ -14,7 +14,7 @@ entries:
   cn-series:
   - apiVersion: v2
     appVersion: 10.0.5
-    created: "2021-10-22T17:46:56.512666636-05:00"
+    created: "2021-11-04T11:23:01.465607207-05:00"
     description: Palo Alto Networks CN-Series firewall Helm chart for Kubernetes
     digest: 5496abd1fc9287278c42fae42280e95f2ee3f8b224730657dee8ba48f997e36f
     icon: https://www.paloaltonetworks.com/content/dam/pan/en_US/images/logos/brand/strata-primary/Strata_Tagline_Logo_RGB.png
@@ -26,7 +26,7 @@ entries:
   cthunder1:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-10-22T17:46:56.51300675-05:00"
+    created: "2021-11-04T11:23:01.466136427-05:00"
     description: A10 Helm chart for cThunder
     digest: 27adfc558dc210c7be18399ce51960b4e59ba8322a9abbd40717895506d2625c
     name: cthunder1
@@ -36,7 +36,7 @@ entries:
   mec-platform:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-10-22T17:46:56.513107357-05:00"
+    created: "2021-11-04T11:23:01.466779419-05:00"
     description: A Helm chart for Kubernetes
     digest: b8a6b5fd0006e3b9606581353bea086bc0a5d064ede2bcb1d93bd6a15bd1e9fd
     name: mec-platform
@@ -44,10 +44,108 @@ entries:
     urls:
     - mec-platform-0.1.1.tgz
     version: 0.1.0
+  occnp:
+  - apiVersion: v1
+    created: "2021-11-04T11:23:01.48604474-05:00"
+    dependencies:
+    - condition: ingress-gateway.enabled
+      name: ingress-gateway
+      repository: alias:cne-helm-repo
+      version: 1.11.2
+    - condition: egress-gateway.enabled
+      name: egress-gateway
+      repository: alias:cne-helm-repo
+      version: 1.11.2
+    - condition: nrf-client.enabled
+      name: nrf-client
+      repository: alias:ocnrf-helm-repo
+      version: 1.6.1
+    - condition: alternate-route.enabled
+      name: alternate-route
+      repository: alias:cne-helm-repo
+      version: 1.3.2
+    - condition: diam-gateway.enabled
+      name: diam-gateway
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: diam-connector.enabled
+      name: diam-connector
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: am-service.enabled
+      name: am-service
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: sm-service.enabled
+      name: sm-service
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: ue-service.enabled
+      name: ue-service
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: config-server.enabled
+      name: config-server
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: user-service.enabled
+      name: user-service
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: pre-service.enabled
+      name: pre-service
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: cm-service.enabled
+      name: cm-service
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: perf-info.enabled
+      name: perf-info
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: appinfo.enabled
+      name: appinfo
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: queryservice.enabled
+      name: queryservice
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: audit-service.enabled
+      name: audit-service
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: ldap-gateway.enabled
+      name: ldap-gateway
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: policyds.enabled
+      name: policyds
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: binding.enabled
+      name: binding
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: pcrf-core.enabled
+      name: pcrf-core
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    - condition: soap-connector.enabled
+      name: soap-connector
+      repository: alias:occnp-helm-repo
+      version: 1.11.0
+    description: Helm chart for occnp components
+    digest: fba85a8751076dfcea3232dae8d88a63e48fc7c180c5d742ad29336740420e3d
+    name: occnp
+    urls:
+    - occnp-lab-final.tgz
+    version: 1.11.0
   unibo-mec-api-tester:
   - apiVersion: v1
     appVersion: 1.16.0
-    created: "2021-10-22T17:46:56.51320988-05:00"
+    created: "2021-11-04T11:23:01.486303638-05:00"
     description: A Helm chart for Kubernetes
     digest: 9edd93edcee69802eb683c39700aac316b9a26a94b05f1f021deb3de4760a10b
     name: unibo-mec-api-tester
@@ -58,7 +156,7 @@ entries:
   unibotest:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-10-22T17:46:56.513324633-05:00"
+    created: "2021-11-04T11:23:01.486933587-05:00"
     description: A Helm chart for Kubernetes
     digest: 37dca1353e4f2d999a97c6f668b1a131fd4d7049392f976146f1ba9b10bd2c43
     name: unibotest
@@ -66,4 +164,4 @@ entries:
     urls:
     - unibotest-0.1.0.tgz
     version: 0.1.0
-generated: "2021-10-22T17:46:56.511034158-05:00"
+generated: "2021-11-04T11:23:01.463913149-05:00"
