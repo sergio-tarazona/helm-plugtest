@@ -3,7 +3,7 @@ entries:
   benu-bng:
   - apiVersion: v2
     appVersion: 9.0.1
-    created: "2022-02-28T16:47:42.169116444+01:00"
+    created: "2022-03-01T09:09:35.781272445+01:00"
     description: Benu BNG chart for Kubernetes
     digest: c13748c553a908c49471caffc658c5a1d92358ef0d9e270d27ade08df1efe3f0
     name: benu-bng
@@ -14,7 +14,7 @@ entries:
   cn-series:
   - apiVersion: v2
     appVersion: 10.0.5
-    created: "2022-02-28T16:47:42.170517678+01:00"
+    created: "2022-03-01T09:09:35.781928655+01:00"
     description: Palo Alto Networks CN-Series firewall Helm chart for Kubernetes
     digest: 5496abd1fc9287278c42fae42280e95f2ee3f8b224730657dee8ba48f997e36f
     icon: https://www.paloaltonetworks.com/content/dam/pan/en_US/images/logos/brand/strata-primary/Strata_Tagline_Logo_RGB.png
@@ -26,7 +26,7 @@ entries:
   cthunder1:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-02-28T16:47:42.171284438+01:00"
+    created: "2022-03-01T09:09:35.782298518+01:00"
     description: A10 Helm chart for cThunder
     digest: 27adfc558dc210c7be18399ce51960b4e59ba8322a9abbd40717895506d2625c
     name: cthunder1
@@ -36,7 +36,7 @@ entries:
   mec-platform:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-28T16:47:42.171453707+01:00"
+    created: "2022-03-01T09:09:35.782444076+01:00"
     description: A Helm chart for Kubernetes
     digest: a0094cb08d5ece38f5cb7c1c7205208e7513034d621527237cd8412efd444f53
     name: mec-platform
@@ -47,7 +47,7 @@ entries:
   oai-5gcore:
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2022-02-28T16:47:42.168400805+01:00"
+    created: "2022-03-01T09:09:35.788352626+01:00"
     dependencies:
     - condition: oai-amf.enabled
       name: oai-amf
@@ -82,7 +82,7 @@ entries:
       repository: ""
       version: 1.6.9
     description: Helm chart for the complete 5G Core
-    digest: c647810fdd068a43a757f63c54d1da9e1ec0d0b13cac74abbe58cdd469cee72f
+    digest: 7758abab103aa94e339b1b51ee7f2cd0b8f99c5f92f6e2a7a6189b87cdaeca33
     icon: http://www.openairinterface.org/wp-content/uploads/2015/06/cropped-oai_final_logo.png
     keywords:
     - 5GCN
@@ -92,11 +92,11 @@ entries:
     name: oai-5gcore
     type: application
     urls:
-    - 5gcore-oai.tgz
+    - oai-core5g.tgz
     version: 1.1.0
   occnp:
   - apiVersion: v1
-    created: "2022-02-28T16:47:42.192796801+01:00"
+    created: "2022-03-01T09:09:35.80899764+01:00"
     dependencies:
     - condition: ingress-gateway.enabled
       name: ingress-gateway
@@ -195,7 +195,7 @@ entries:
   unibotest02:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-28T16:47:42.193048054+01:00"
+    created: "2022-03-01T09:09:35.809629546+01:00"
     description: A Helm chart for Kubernetes - Version 2
     digest: 9645be889b8ad33a72d3d9e9bd08ae8212235a29d4ae0e6660a7296c68b61fbc
     name: unibotest02
@@ -206,7 +206,7 @@ entries:
   unibotest03:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-28T16:47:42.193205277+01:00"
+    created: "2022-03-01T09:09:35.809803029+01:00"
     description: A Helm chart for Kubernetes - Version 1
     digest: 7ccead0bf51acd817e720eec801cd37a8f0e3470d2b22741b52ee64275ca3a2f
     name: unibotest03
@@ -214,4 +214,4 @@ entries:
     urls:
     - unibotest03.tgz
     version: 0.1.1
-generated: "2022-02-28T16:47:42.163451145+01:00"
+generated: "2022-03-01T09:09:35.780400657+01:00"
