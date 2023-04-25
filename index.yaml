@@ -3,7 +3,7 @@ entries:
   benu-bng:
   - apiVersion: v2
     appVersion: 9.0.1
-    created: "2023-03-31T22:33:49.192701795-05:00"
+    created: "2023-04-25T20:07:23.08648296Z"
     description: Benu BNG chart for Kubernetes
     digest: c13748c553a908c49471caffc658c5a1d92358ef0d9e270d27ade08df1efe3f0
     name: benu-bng
@@ -14,7 +14,7 @@ entries:
   cn-series:
   - apiVersion: v2
     appVersion: 10.0.5
-    created: "2023-03-31T22:33:49.193293004-05:00"
+    created: "2023-04-25T20:07:23.08870925Z"
     description: Palo Alto Networks CN-Series firewall Helm chart for Kubernetes
     digest: 5496abd1fc9287278c42fae42280e95f2ee3f8b224730657dee8ba48f997e36f
     icon: https://www.paloaltonetworks.com/content/dam/pan/en_US/images/logos/brand/strata-primary/Strata_Tagline_Logo_RGB.png
@@ -26,7 +26,7 @@ entries:
   cthunder1:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-31T22:33:49.193636404-05:00"
+    created: "2023-04-25T20:07:23.089828427Z"
     description: A10 Helm chart for cThunder
     digest: 27adfc558dc210c7be18399ce51960b4e59ba8322a9abbd40717895506d2625c
     name: cthunder1
@@ -36,7 +36,7 @@ entries:
   mec-platform:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T22:33:49.193764951-05:00"
+    created: "2023-04-25T20:07:23.090245579Z"
     description: A Helm chart for Kubernetes
     digest: 8974f6e7c805e0056facdb5eec7bee5137bf7e90b46b5c67c95a84b0fc0d7449
     name: mec-platform
@@ -47,7 +47,7 @@ entries:
   oai-5gcore:
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2023-03-31T22:33:49.201281569-05:00"
+    created: "2023-04-25T20:07:23.100661028Z"
     dependencies:
     - condition: oai-amf.enabled
       name: oai-amf
@@ -94,9 +94,77 @@ entries:
     urls:
     - oai-core5g2.tgz
     version: 1.1.0
+  oai-5gcore-controlplane:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2023-04-25T20:07:23.078072121Z"
+    dependencies:
+    - condition: oai-amf.enabled
+      name: oai-amf
+      repository: ""
+      version: 1.1.0
+    - condition: oai-ausf.enabled
+      name: oai-ausf
+      repository: ""
+      version: 1.1.2
+    - condition: oai-nrf.enabled
+      name: oai-nrf
+      repository: ""
+      version: 1.1.0
+    - condition: oai-smf.enabled
+      name: oai-smf
+      repository: ""
+      version: 1.1.0
+    - condition: oai-udm.enabled
+      name: oai-udm
+      repository: ""
+      version: 1.1.2
+    - condition: oai-udr.enabled
+      name: oai-udr
+      repository: ""
+      version: 1.1.2
+    - condition: mysql.enabled
+      name: mysql
+      repository: ""
+      version: 1.6.9
+    description: Helm chart for the control plane of 5G Core
+    digest: 8f82a244d37a9564c6599c30f73b815c136a7427f4e2f840f91173344b91b14f
+    icon: http://www.openairinterface.org/wp-content/uploads/2015/06/cropped-oai_final_logo.png
+    keywords:
+    - 5GCN
+    maintainers:
+    - email: contact@openairinterface.org
+      name: OPENAIRINTERFACE
+    name: oai-5gcore-controlplane
+    type: application
+    urls:
+    - 5g-controlplane.tgz
+    version: 1.1.0
+  oai-5gcore-dataplane:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2023-04-25T20:07:23.083109748Z"
+    dependencies:
+    - condition: oai-spgwu-tiny.enabled
+      name: oai-spgwu-tiny
+      repository: ""
+      version: 1.1.2
+    description: Helm chart for the dataplane (UPF) of 5G Core
+    digest: 2ebf446692c7f99cb5a3574b0814c2360524f59a5cb8d18e2fce373597d8ff81
+    icon: http://www.openairinterface.org/wp-content/uploads/2015/06/cropped-oai_final_logo.png
+    keywords:
+    - 5GCN
+    maintainers:
+    - email: contact@openairinterface.org
+      name: OPENAIRINTERFACE
+    name: oai-5gcore-dataplane
+    type: application
+    urls:
+    - 5g-dataplane.tgz
+    version: 1.1.0
   occnp:
   - apiVersion: v1
-    created: "2023-03-31T22:33:49.228763705-05:00"
+    created: "2023-04-25T20:07:23.139486961Z"
     dependencies:
     - condition: ingress-gateway.enabled
       name: ingress-gateway
@@ -195,7 +263,7 @@ entries:
   unibotest02:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T22:33:49.228908001-05:00"
+    created: "2023-04-25T20:07:23.13992249Z"
     description: A Helm chart for Kubernetes - Version 2
     digest: 9645be889b8ad33a72d3d9e9bd08ae8212235a29d4ae0e6660a7296c68b61fbc
     name: unibotest02
@@ -206,7 +274,7 @@ entries:
   unibotest03:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T22:33:49.229022721-05:00"
+    created: "2023-04-25T20:07:23.140244241Z"
     description: A Helm chart for Kubernetes - Version 1
     digest: 7ccead0bf51acd817e720eec801cd37a8f0e3470d2b22741b52ee64275ca3a2f
     name: unibotest03
@@ -214,4 +282,4 @@ entries:
     urls:
     - unibotest03.tgz
     version: 0.1.1
-generated: "2023-03-31T22:33:49.191873035-05:00"
+generated: "2023-04-25T20:07:23.06904473Z"
